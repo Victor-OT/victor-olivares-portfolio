@@ -5,7 +5,9 @@ import './App.css'
 function App() {
 
   return (
-    <NavBar />
+    <div className='app'>
+        <NavBar />
+    </div>
   )
 }
 
