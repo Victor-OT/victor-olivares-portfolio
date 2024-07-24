@@ -22,7 +22,7 @@
     letter-spacing: 0.8px;
     padding: 0 25px;
     font-size: 18px;
-    opacity: 0.75;
+    opacity: 0.50;
     margin-right: 20px;
 }
 
@@ -106,8 +106,9 @@
     background: white;
     left: 0;
     top: 0;
-    transition: 0.3 ease-in-out;
+    transition: 0.3s ease-in-out;
     z-index: -1;
+    transform-origin: left;
     transform: scaleX(0);
 }
 
@@ -116,12 +117,12 @@
 }
 
 .navbar-text button:hover::before {
-    transform: scaleY(1);
+    transform: scaleX(1);
 }
 
 .navbar-toggler:active,
 .navbar-toggler:focus {
-    outline: none;
+    outline: none !important;
     box-shadow: none;
 }
 
