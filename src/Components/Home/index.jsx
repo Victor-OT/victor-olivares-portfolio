@@ -5,7 +5,7 @@ import './Home.css'
 function Home () {
     return (
         <section className="home">
-            <Container>
+            <Container className="home-container">
                 <Row className='align-items-center'>
                     <Col xs={12} md={6} xl={6} className="main-text-container">
                         <span className="tagline">Mi Portafolio</span>
