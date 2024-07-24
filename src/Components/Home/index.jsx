@@ -14,7 +14,7 @@ function Home () {
                         <button onClick={() => console.log('Connect')}>Let's connect <ArrowRightCircle size={24}/></button>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
-                        <img src="../../../public/header-img.svg" alt="" />
+                        <img src="/header-img.svg" alt="" />
                     </Col>
                 </Row>
             </Container>
