@@ -32,6 +32,7 @@
 .navbar-text {
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
 .social-icon {
