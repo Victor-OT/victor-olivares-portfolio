@@ -1,5 +1,6 @@
 .home-container {
     margin-top: 70px;
+    width: 100%;
 }
 
 .tagline {
@@ -40,4 +41,8 @@
 
 .main-text-container button:hover {
     transform: scale(1.1);
+}
+
+.home-container img {
+    width: 100%;
 }
