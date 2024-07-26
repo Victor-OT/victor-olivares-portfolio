@@ -30,7 +30,7 @@ function Skills () {
                     <Col>
                         <div className="skills-container">
                             <h2>Skills</h2>
-                            <p>Como desarrollador Frontend, manejo diversas tecnologías y frameworks modernos, creando interfaces intuitivas y optimizadas para todos los dispositivos.</p>
+                            <p>Como desarrollador Frontend, manejo diversas tecnologías y frameworks modernos para crear interfaces intuitivas y optimizadas para todos los dispositivos.</p>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 <div className="item">
                                     <img src="/logos/html.svg" alt="html" />
