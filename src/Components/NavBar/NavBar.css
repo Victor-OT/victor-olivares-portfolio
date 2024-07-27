@@ -1,13 +1,17 @@
 .navbar-container {
     padding: 18px 0;
-    position: fixed;
+    position: fixed !important;
+    justify-content: space-between !important;
     top: 0;
     transition: 0.32s ease-in-out;
+    width: 100%;
+    z-index: 1000;
+    background: #121212;
 }
 
 .navbar-container .scrolled {
     padding: 0;
-    background-color: #121212;
+    background: #121212;
 }
 
 .navbar-brand {

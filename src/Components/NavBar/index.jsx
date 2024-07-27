@@ -20,7 +20,7 @@ function NavBar () {
         }
         window.addEventListener('scroll', onScroll)
         return () => window.removeEventListener('scroll', onscroll)
-    }, [])
+    }, [scrolled])
 
     const onActiveLink = (value) => {
         setActiveLink(value)
