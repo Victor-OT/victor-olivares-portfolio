@@ -1,0 +1,19 @@
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    background-image: url('/bg-projects.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+}
+
+.projects-container h2 {
+    font-size: 45px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 0.8px;
+    align-self: center;
+    margin: 40px;
+}
