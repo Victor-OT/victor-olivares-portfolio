@@ -3,10 +3,9 @@
     flex-direction: column;
     justify-content: center;
     position: relative;
-    background-image: url('/bg-projects.svg');
+    background-image: url('/bg_projects.svg');
     background-size: cover;
     background-repeat: no-repeat;
-    margin-top: 50px;
 }
 
 .projects-container h2 {
