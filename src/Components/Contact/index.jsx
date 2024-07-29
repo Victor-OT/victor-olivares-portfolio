@@ -18,8 +18,24 @@ function Contact () {
         setFormDetails({...formDetails, [category]: value})
     }
 
-    const handleSubmit = () => {
-        
+    const handleSubmit = async (e) => {
+        e.preventDefault()
+        setButtonText('Sending...')
+        let response = await fetch('http://localhost:5000/contact', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'Application/json;charset=utf-8'
+            },
+            body: JSON.stringify(formDetails)
+        })
+        setButtonText('Send')
+        let result = response.json()
+        setFormDetails(formInitialDetails)
+        if (result.code === 200){
+            setStatus({succes: true, message: 'Message sent succesfully'})
+        } else {
+            setStatus({succes: false, message: 'Something went wrong, please try again later'})
+        }
     }
 
     return (
@@ -31,7 +47,7 @@ function Contact () {
                     </Col>
                     <Col md={6}>
                         <h2>Get In Touch</h2>
-                        <form onSubmit={() => handleSubmit()}>
+                        <form onSubmit={() => handleSubmit()} id='contact'>
                             <Row>
                                 <Col sm={6}>
                                     <input type="text" value={formDetails.firstName} placeholder="First Name" 
