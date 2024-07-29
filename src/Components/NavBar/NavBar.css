@@ -5,7 +5,7 @@
     top: 0;
     transition: 0.32s ease-in-out;
     width: 100%;
-    z-index: 1000;
+    z-index: 9999;
     background: #121212;
 }
 
@@ -16,6 +16,10 @@
 
 .navbar-brand {
     width: 50%;
+}
+
+.navbar-brand h1 {
+    font-weight: bold;
 }
 
 .nav-link {

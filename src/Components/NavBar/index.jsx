@@ -30,7 +30,7 @@ function NavBar () {
         <Navbar expand="lg" className={`navbar-container ${scrolled ? 'scrolled' : ''}`}>
             <Container>
                 <Navbar.Brand href="#home">
-                    <img src={logo} alt="logo" />
+                    <h1>Victor Breaker</h1>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav">
                     <span className="navbar-toggler-icon"></span>

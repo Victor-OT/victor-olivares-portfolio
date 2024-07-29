@@ -29,7 +29,7 @@ function Contact () {
             body: JSON.stringify(formDetails)
         })
         setButtonText('Send')
-        let result = response.json()
+        let result = await response.json()
         setFormDetails(formInitialDetails)
         if (result.code === 200){
             setStatus({succes: true, message: 'Message sent succesfully'})
@@ -47,7 +47,7 @@ function Contact () {
                     </Col>
                     <Col md={6}>
                         <h2>Get In Touch</h2>
-                        <form onSubmit={() => handleSubmit()} id='contact'>
+                        <form onSubmit={handleSubmit} id='contact'>
                             <Row>
                                 <Col sm={6}>
                                     <input type="text" value={formDetails.firstName} placeholder="First Name" 
@@ -73,7 +73,7 @@ function Contact () {
                                 {
                                     status.message &&
                                     <Col>
-                                        <p className={status.success === false ? 'danger' : success}>{status.message}</p>
+                                        <p className={status.success === false ? 'danger' : 'success'}>{status.message}</p>
                                     </Col>
                                 }
                             </Row>
