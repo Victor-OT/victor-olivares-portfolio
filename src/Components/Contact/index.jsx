@@ -22,7 +22,7 @@ function Contact () {
     const handleSubmit = async (e) => {
         e.preventDefault()
         setButtonText('Sending...')
-        let response = await fetch('web-production-a528.up.railway.app/contact', {
+        let response = await fetch('https://web-production-a528.up.railway.app/contact', {
             method: 'POST',
             headers: {
                 'Content-Type': 'Application/json;charset=utf-8'
