@@ -22,7 +22,7 @@ function Contact () {
     const handleSubmit = async (e) => {
         e.preventDefault()
         setButtonText('Sending...')
-        let response = await fetch('https://victor-olivares-portfolio-17b4b061a8ae.herokuapp.com/contact', {
+        let response = await fetch('web-production-a528.up.railway.app/contact', {
             method: 'POST',
             headers: {
                 'Content-Type': 'Application/json;charset=utf-8'
@@ -86,4 +86,4 @@ function Contact () {
     )
 }
 
-export {Contact}
+export {Contact} 
