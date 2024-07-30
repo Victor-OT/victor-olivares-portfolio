@@ -25,7 +25,8 @@ function Contact () {
         let response = await fetch('https://web-production-a528.up.railway.app/contact', {
             method: 'POST',
             headers: {
-                'Content-Type': 'Application/json;charset=utf-8'
+                'Content-Type': 'Application/json;charset=utf-8',
+                'Access-Control-Allow_origin': '*'
             },
             mode:'cors',
             body: JSON.stringify(formDetails)
