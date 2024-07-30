@@ -27,6 +27,7 @@ function Contact () {
             headers: {
                 'Content-Type': 'Application/json;charset=utf-8'
             },
+            mode:'cors',
             body: JSON.stringify(formDetails)
         })
         setButtonText('Send')
