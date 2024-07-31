@@ -51,9 +51,9 @@ function NavBar () {
                     </Nav>
                     <span className="navbar-text">
                         <div className="social-icon">
-                            <a href="#"><img src={navIcon1} alt="icon1" /></a>
-                            <a href="#"><img src={navIcon2} alt="icon2" /></a>
-                            <a href="#"><img src={navIcon3} alt="icon3" /></a>
+                            <a href="https://www.linkedin.com/in/victor-olivares-torres-a24103320"><img src={navIcon1} alt="icon1" /></a>
+                            <a href="https://www.facebook.com/crow.breaker.50/"><img src={navIcon2} alt="icon2" /></a>
+                            <a href="https://www.instagram.com/victor.breaker.3d/"><img src={navIcon3} alt="icon3" /></a>
                         </div>
                         <a href="#contact"><button><span>Let's Connect</span></button></a>
                     </span>
