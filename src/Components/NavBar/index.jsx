@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react"
 import { Navbar, Container, Nav } from "react-bootstrap"
-import logo from '/logo.svg'
 import navIcon1 from '/nav-icon1.svg'
 import navIcon2 from '/nav-icon2.svg'
 import navIcon3 from '/nav-icon3.svg'
@@ -56,7 +55,7 @@ function NavBar () {
                             <a href="#"><img src={navIcon2} alt="icon2" /></a>
                             <a href="#"><img src={navIcon3} alt="icon3" /></a>
                         </div>
-                        <button onClick={() => console.log('Connect')}><span>Let's Connect</span></button>
+                        <a href="#contact"><button><span>Let's Connect</span></button></a>
                     </span>
                 </Navbar.Collapse>
             </Container>

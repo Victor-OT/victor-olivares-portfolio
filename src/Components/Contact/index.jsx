@@ -1,6 +1,8 @@
 import { useState } from "react"
 import { Container, Row, Col } from "react-bootstrap"
 import './Contact.css'
+import 'animate.css';
+import TrackVisibility from 'react-on-screen';
 
 function Contact () {
     const formInitialDetails = {
@@ -42,11 +44,17 @@ function Contact () {
     }
 
     return (
-        <section className="contact" id='connect'>
+        <section className="contact" id='contact'>
             <Container>
                 <Row className="align-items-center">
                     <Col md={6}>
-                        <img src="/contact-img.svg" alt="contact" />
+                        <TrackVisibility>
+                            {({isVisible}) => (
+                                <div className={isVisible ? 'animate__animated animate__zoomIn' : ''}>
+                                    <img src="/contact-img.svg" alt="contact" />
+                                </div>
+                            )}
+                        </TrackVisibility>
                     </Col>
                     <Col md={6}>
                         <h2>Get In Touch</h2>
@@ -72,13 +80,13 @@ function Contact () {
                                     <textarea row={6} value={formDetails.message} placeholder="Message" 
                                         onChange={(event) => onFormUpdate('message', event.target.value)} ></textarea>
                                     <button type="submit"><span>{buttonText}</span></button>
+                                    {
+                                        status.message &&
+                                        <Col>
+                                            <p className={status.success === false ? 'danger' : 'success'}>{status.message}</p>
+                                        </Col>
+                                    }   
                                 </Col>
-                                {
-                                    status.message &&
-                                    <Col>
-                                        <p className={status.success === false ? 'danger' : 'success'}>{status.message}</p>
-                                    </Col>
-                                }
                             </Row>
                         </form>
                     </Col>

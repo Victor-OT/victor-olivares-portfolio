@@ -8,11 +8,15 @@
     background-repeat: no-repeat;
 }
 
-.projects-container h2 {
+.projects-header {
+    display: flex;
+    justify-content: center;
+}
+
+.projects-container .projects-header h2 {
     font-size: 45px;
     font-weight: bold;
     color: white;
     letter-spacing: 0.8px;
-    align-self: center;
     margin: 40px;
 }

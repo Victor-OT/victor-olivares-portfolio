@@ -1,6 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap"
 import { ProjectCard } from "../ProjectCard"
 import './Projects.css'
+import TrackVisibility from "react-on-screen"
 
 function Projects () {
     const projects = [
@@ -10,8 +11,14 @@ function Projects () {
     ]
 
     return (
-        <section className="projects-container">
-            <h2>Projects</h2>
+        <section className="projects-container" id="projects">
+            <TrackVisibility>
+                {({isVisible}) => (
+                    <div className={isVisible ? 'projects-header animate__animated animate__slideInUp' : ''}>
+                        <h2>Projects</h2>
+                    </div>
+                )}
+            </TrackVisibility>
             <Container>
                 <Row>
                     {
