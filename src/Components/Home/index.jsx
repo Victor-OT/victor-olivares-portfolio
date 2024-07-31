@@ -25,7 +25,7 @@ function Home () {
                         <TrackVisibility>
                             {({isVisible}) => (
                                 <div className={isVisible ? 'animate__animated animate__fadeIn' : ''}>
-                                    <img src="/header-img.svg" alt="" className="header-image"/>
+                                    <img src="/header-img.png" alt="" className="header-image"/>
                                 </div>
                             )}
                         </TrackVisibility>
