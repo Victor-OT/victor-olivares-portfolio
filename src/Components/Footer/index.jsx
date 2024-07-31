@@ -14,7 +14,7 @@ function Footer () {
                     </Col>
                     <Col sm={6} className="text-center text-sm-end">
                         <div className="social-icon justify-content-end">
-                            <a href="https://www.linkedin.com/in/victor-olivares-torres-a24103320"><img src={navIcon1} alt="icon-1" /></a>
+                            <a href="https://www.linkedin.com/in/victor-breaker-dev/"><img src={navIcon1} alt="icon-1" /></a>
                             <a href="https://www.facebook.com/crow.breaker.50/"><img src={navIcon2} alt="icon-2" /></a>
                             <a href="https://www.instagram.com/victor.breaker.3d/"><img src={navIcon3} alt="icon-3" /></a>
                         </div>
